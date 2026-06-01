@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function PremiumSection() {
   return (
-    <section id="premium" className="bg-[#f7f9fa] px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
+    <section id="premium" className="bg-calm-mist px-5 py-16 sm:px-8 sm:py-20 lg:px-10">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-center text-3xl font-bold text-calm-deep sm:text-4xl">
           دوره آزمایشی رایگان EFT Premium را شروع کنید.

@@ -5,6 +5,13 @@ import Link from "next/link";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 
 export default function Header() {
+  const navItems = [
+    { href: "#sleep", label: "خواب" },
+    { href: "#meditation", label: "مدیتیشن" },
+    { href: "#relax", label: "آرامش" },
+    { href: "#music", label: "موسیقی" },
+  ];
+
   const scrollY = useScrollPosition();
   const isScrolled = scrollY > 150;
 
@@ -40,47 +47,21 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href="#sleep"
-            className={
-              isScrolled
-                ? "text-sm font-medium text-slate-700"
-                : "text-sm font-medium text-white/90"
-            }
-          >
-            خواب
-          </Link>
-          <Link
-            href="#meditation"
-            className={
-              isScrolled
-                ? "text-sm font-medium text-slate-700"
-                : "text-sm font-medium text-white/90"
-            }
-          >
-            مدیتیشن
-          </Link>
-          <Link
-            href="#relax"
-            className={
-              isScrolled
-                ? "text-sm font-medium text-slate-700"
-                : "text-sm font-medium text-white/90"
-            }
-          >
-            آرامش
-          </Link>
-          <Link
-            href="#music"
-            className={
-              isScrolled
-                ? "text-sm font-medium text-slate-700"
-                : "text-sm font-medium text-white/90"
-            }
-          >
-            موسیقی
-          </Link>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={
+                isScrolled
+                  ? "text-sm font-medium text-slate-700"
+                  : "text-sm font-medium text-white/90"
+              }
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
+        
 
         <div className="flex items-center gap-3 sm:gap-4">
           <Link

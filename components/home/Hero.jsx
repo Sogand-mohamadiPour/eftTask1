@@ -1,5 +1,7 @@
-import EmailSignup from "@/components/home/EmailSignup";
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -23,7 +25,29 @@ export default function Hero() {
         <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/85 sm:text-xl">
           مدیتیشن، خواب عمیق‌تر و لحظاتی از سکوت — همه در یک جا.
         </p>
-        <EmailSignup />
+
+        <div
+          id="start"
+          className="mt-10 flex max-w-md flex-col gap-3 sm:flex-row sm:items-stretch"
+        >
+          <input
+            type="email"
+            placeholder="ایمیل خود را وارد کنید"
+            className="w-full rounded-full border border-white/25 bg-white/10 px-5 py-3.5 text-white placeholder:text-white/55 backdrop-blur-sm focus:border-white focus:bg-white/25 focus:outline-none focus:ring-4 focus:ring-white/20"
+          />
+          <Link
+            href="#premium"
+            className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-8 py-3.5 text-base font-semibold text-calm-deep hover:bg-white/90"
+          >
+            امتحان رایگان
+          </Link>
+        </div>
+        <p className="mt-4 text-sm text-white/60">
+          حساب کاربری دارید؟
+          <Link href="#login" className="mx-1 underline hover:text-white/90">
+            وارد شوید
+          </Link>
+        </p>
       </div>
     </section>
   );

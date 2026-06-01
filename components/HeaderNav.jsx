@@ -14,10 +14,7 @@ export default function HeaderNav({ scrolled }) {
 
   return (
     <>
-      <nav
-        className="hidden items-center gap-8 md:flex"
-        aria-label="منوی اصلی"
-      >
+      <nav className="hidden items-center gap-8 md:flex">
         {navLinks.map((link) => (
           <Link
             key={link.href}
@@ -40,8 +37,8 @@ export default function HeaderNav({ scrolled }) {
           href="#start"
           className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 sm:px-5 ${
             scrolled
-              ? "bg-[#2d6a7e] text-white hover:bg-[#245663]"
-              : "bg-white text-[#1a3a4a] hover:bg-white/90"
+              ? "bg-calm-teal text-white hover:bg-[#245663]"
+              : "bg-white text-calm-deep hover:bg-white/90"
           }`}
         >
           شروع رایگان

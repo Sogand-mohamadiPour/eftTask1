@@ -5,7 +5,7 @@ import { benefits } from "@/data/benefits";
 
 export default function HelpSection() {
   return (
-    <SectionContainer className="bg-[#f7f9fa]">
+    <SectionContainer className="bg-calm-mist">
       <SectionHeading
         title="ما اینجاییم تا احساس بهتری داشته باشید."
       />

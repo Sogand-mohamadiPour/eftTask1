@@ -15,7 +15,6 @@ export default function Logo({ scrolled = false }) {
           width={120}
           height={40}
           className="h-9 w-auto object-contain sm:h-10"
-          priority
         />
       </span>
     </Link>

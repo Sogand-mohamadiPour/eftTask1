@@ -20,18 +20,20 @@ export default function EmailSignup() {
           name="email"
           placeholder="ایمیل خود را وارد کنید"
           className={`${inputBase} ${inputFocus}`}
-          aria-label="ایمیل"
         />
         <Link
           href="#premium"
-          className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-8 py-3.5 text-center text-base font-semibold text-[#1a3a4a] transition hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+          className="inline-flex shrink-0 items-center justify-center rounded-full bg-white px-8 py-3.5 text-center text-base font-semibold text-calm-deep transition hover:bg-white/90 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white"
         >
           امتحان رایگان
         </Link>
       </div>
       <p className="mt-4 text-sm text-white/60">
-        قبلاً حساب دارید؟{" "}
-        <Link href="#login" className="underline underline-offset-2 hover:text-white/90">
+        حساب کاربری دارید؟
+        <Link
+          href="#login"
+          className="underline underline-offset-2 hover:text-white/90 mx-1"
+        >
           وارد شوید
         </Link>
       </p>

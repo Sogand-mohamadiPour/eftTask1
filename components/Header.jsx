@@ -1,7 +1,7 @@
 "use client";
 
 import Logo from "@/components/Logo";
-import HeaderNav from "@/components/header/HeaderNav";
+import HeaderNav from "@/components/HeaderNav";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 
 const pxsToScroll = 150;

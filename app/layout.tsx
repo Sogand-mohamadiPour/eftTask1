@@ -10,7 +10,7 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "EFT | آرامش و مدیتیشن",
+  title: "EFT",
   description: "مدیتیشن، خواب و آرامش",
 };
 

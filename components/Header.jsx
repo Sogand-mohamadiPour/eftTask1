@@ -2,12 +2,13 @@
 
 import Logo from "@/components/Logo";
 import HeaderNav from "@/components/header/HeaderNav";
-import { useScrolledPast } from "@/hooks/useScrolledPast";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 
-const SCROLL_THRESHOLD = 72;
+const pxsToScroll = 150;
 
 export default function Header() {
-  const scrolled = useScrolledPast(SCROLL_THRESHOLD);
+  const scrollY = useScrollPosition();
+  const scrolled = scrollY > pxsToScroll;
 
   return (
     <header
@@ -17,7 +18,7 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-6 px-5 sm:px-8 lg:px-10">
+      <div className="mx-auto flex h-18 max-w-6xl items-center justify-between gap-6 px-5 sm:px-8 lg:px-10">
         <Logo scrolled={scrolled} />
         <HeaderNav scrolled={scrolled} />
       </div>

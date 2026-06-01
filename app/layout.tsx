@@ -11,7 +11,7 @@ const vazirmatn = Vazirmatn({
 
 export const metadata: Metadata = {
   title: "EFT | آرامش و مدیتیشن",
-  description: "مدیتیشن، خواب و آرامش — به زبان فارسی",
+  description: "مدیتیشن، خواب و آرامش",
 };
 
 export default function RootLayout({

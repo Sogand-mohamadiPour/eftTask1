@@ -1,22 +1,21 @@
-import CtaSection from "@/components/home/CtaSection";
+import BlogSection from "@/components/home/BlogSection";
+import FaqSection from "@/components/home/FaqSection";
+import HelpSection from "@/components/home/HelpSection";
 import Hero from "@/components/home/Hero";
-import PlaceholderSection from "@/components/home/PlaceholderSection";
-import { placeholderSections } from "@/data/homeSections";
+import PremiumSection from "@/components/home/PremiumSection";
+import ReviewsSection from "@/components/home/ReviewsSection";
+import SiteFooter from "@/components/home/SiteFooter";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      {placeholderSections.map((section, index) => (
-        <PlaceholderSection
-          key={section.id}
-          id={section.id}
-          title={section.title}
-          description={section.description}
-          variant={index % 2 === 0 ? "muted" : "plain"}
-        />
-      ))}
-      <CtaSection />
+      <HelpSection />
+      <ReviewsSection />
+      <PremiumSection />
+      <BlogSection />
+      <FaqSection />
+      <SiteFooter />
     </main>
   );
 }

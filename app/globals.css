@@ -6,10 +6,6 @@
   --color-calm-mist: #f7f9fa;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   color: var(--color-calm-deep);
   background-color: #fff;

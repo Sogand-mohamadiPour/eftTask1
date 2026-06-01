@@ -12,7 +12,7 @@ export default function PremiumSection() {
         </p>
 
         <div className="mx-auto mt-12 grid max-w-3xl gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-[#2d6a7e] bg-calm-deep p-6 text-white shadow-xl sm:p-8">
+          <div className="rounded-2xl border border-calm-teal bg-calm-deep p-6 text-white shadow-xl sm:p-8">
             <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold">
               پیشنهاد ویژه
             </span>

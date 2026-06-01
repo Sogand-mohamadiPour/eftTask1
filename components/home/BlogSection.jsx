@@ -13,7 +13,7 @@ export default function BlogSection() {
 
         <div className="grid gap-8 md:grid-cols-2">
           <article className="overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200/80">
-            <div className="h-40 bg-gradient-to-br from-[#2d6a7e]/20 to-[#1a3a4a]/30 sm:h-48" />
+            <div className="h-40 bg-linear-to-br from-calm-teal/20 to-calm-deep/30 sm:h-48" />
             <div className="p-6">
               <span className="text-xs font-semibold text-calm-teal">خواب</span>
               <h3 className="mt-2 text-xl font-bold text-calm-deep">
@@ -29,7 +29,7 @@ export default function BlogSection() {
           </article>
 
           <article className="overflow-hidden rounded-2xl bg-white ring-1 ring-slate-200/80">
-            <div className="h-40 bg-gradient-to-br from-[#2d6a7e]/20 to-[#1a3a4a]/30 sm:h-48" />
+            <div className="h-40 bg-linear-to-br from-calm-teal/20 to-calm-deep/30 sm:h-48" />
             <div className="p-6">
               <span className="text-xs font-semibold text-calm-teal">آرامش</span>
               <h3 className="mt-2 text-xl font-bold text-calm-deep">

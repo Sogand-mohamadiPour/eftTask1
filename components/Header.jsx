@@ -32,6 +32,7 @@ export default function Header() {
               width={120}
               height={40}
               className="h-9 w-auto sm:h-10"
+              priority
             />
           ) : (
             <span className="rounded-lg bg-white/95 px-2 py-1 shadow-md ring-1 ring-white/40">
@@ -41,6 +42,7 @@ export default function Header() {
                 width={120}
                 height={40}
                 className="h-9 w-auto sm:h-10"
+                priority
               />
             </span>
           )}

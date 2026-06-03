@@ -8,7 +8,7 @@ export default function SiteFooter() {
           <div>
             <p className="text-2xl font-bold">EFT</p>
             <p className="mt-3 max-w-sm text-sm text-white/70">
-              آرامش ذهن، خواب بهتر، زندگی شادتر — به زبان فارسی.
+              آرامش ذهن، خواب بهتر، زندگی شادتر.
             </p>
             <Link
               href="#start"

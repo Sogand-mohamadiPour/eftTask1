@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" className={vazirmatn.variable}>
+    <html lang="en" dir="rtl" className={vazirmatn.variable}>
       <body className={`${vazirmatn.className} min-h-full antialiased`}>
         <Header />
         {children}

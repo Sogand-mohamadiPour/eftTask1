@@ -10,6 +10,7 @@ export default function Hero() {
         fill
         className="object-cover object-center"
         sizes="100vw"
+        priority
       />
       <div className="absolute inset-0 bg-linear-to-t from-[#0f2a35]/85 via-calm-deep/40 to-calm-deep/25" />
 
